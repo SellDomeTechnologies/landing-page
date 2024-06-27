@@ -11,6 +11,12 @@ function Download() {
         </h3>
         <p>Download the SellDome App Now and Start Creating!</p>
         <p>Available on the App Store and Google Play.</p>
+        <button>
+          <img src="app-store.png" alt="download btn" />
+        </button>
+        <button>
+          <img src="app-store.png" alt="download btn" />
+        </button>
       </div>
     </section>
   );
