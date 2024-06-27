@@ -1,6 +1,8 @@
+import styles from "./AboutUs.module.css";
+
 function AboutUs() {
   return (
-    <section>
+    <section className={styles.section}>
       <p>
         Selldome is revolutionizing the fashion industry by providing a seamless
         platform for fashion <br /> designers and vendors to connect,
