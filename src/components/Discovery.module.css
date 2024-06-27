@@ -1,0 +1,38 @@
+.section__discovery {
+  color: #000;
+  background: url(round-background.svg) no-repeat,
+    linear-gradient(
+      to right,
+      rgba(251, 229, 170, 0.713),
+      rgba(251, 229, 170, 0.7)
+    );
+  background-position: center;
+  padding: 6rem;
+
+  display: flex;
+  align-items: center;
+  gap: 25rem;
+}
+
+.discovery__content {
+  flex: 0 0 40%;
+
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 3rem;
+}
+
+.discovery__content h2 {
+  font-size: 2.5rem;
+  color: #621b3b;
+}
+
+.discovery__content p {
+  font-size: 1.8rem;
+}
+
+.discovery__img {
+  width: 29.5rem;
+  height: 48.5rem;
+}

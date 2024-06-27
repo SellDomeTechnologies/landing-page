@@ -3,7 +3,7 @@ import styles from "./Discovery.module.css";
 function Discovery() {
   return (
     <section className={styles.section__discovery}>
-      <div>
+      <div className={styles.discovery__content}>
         <h2>Effortless Vendor Discovery</h2>
         <p>
           Say goodbye to endless searches and countless hours spent sourcing
@@ -12,7 +12,7 @@ function Discovery() {
           trims, and accessories for your designs.
         </p>
       </div>
-      <div>
+      <div className={styles.discovery__img}>
         <img src="iphone.png" alt="iphone logo" />
       </div>
     </section>

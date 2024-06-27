@@ -3,6 +3,7 @@ import Header from "../components/Header";
 import AboutUs from "../components/AboutUs";
 import Category from "../components/Category";
 import Download from "../components/Download";
+import Discovery from "../components/Discovery";
 
 function Home() {
   return (
@@ -12,6 +13,7 @@ function Home() {
       <AboutUs />
       <Category />
       <Download />
+      <Discovery />
     </>
   );
 }
