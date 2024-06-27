@@ -1,5 +1,5 @@
 import PageNav from "../components/PageNav";
-import styles from "./Home.module.css";
+import styles from "./Header.module.css";
 
 function Home() {
   return (
