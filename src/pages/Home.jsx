@@ -5,6 +5,7 @@ import Category from "../components/Category";
 import Download from "../components/Download";
 import Discovery from "../components/Discovery";
 import Feature from "../components/Feature";
+import Market from "../components/Market";
 
 function Home() {
   return (
@@ -16,6 +17,7 @@ function Home() {
       <Download />
       <Discovery />
       <Feature />
+      <Market />
     </>
   );
 }
