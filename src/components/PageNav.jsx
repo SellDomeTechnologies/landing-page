@@ -4,7 +4,9 @@ import styles from "./PageNav.module.css";
 function PageNav() {
   return (
     <nav className={styles.nav}>
-      <img src="logo.png" alt="selldome logo" />
+      <div className={styles.nav__logo}>
+        <img src="logo.png" alt="selldome logo" />
+      </div>
       <ul>
         <li>
           <NavLink to="/">Home</NavLink>

@@ -33,6 +33,12 @@ body {
   line-height: 1.6;
 }
 
+button {
+  background: transparent;
+  outline: 0;
+  border: 0;
+}
+
 /*
 "importCSSModule": {
     "prefix": "csm",

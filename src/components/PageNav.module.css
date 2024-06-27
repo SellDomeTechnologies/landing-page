@@ -2,4 +2,34 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+  padding: 2rem 6rem;
+}
+
+.nav__logo {
+  width: 15rem;
+  height: 6rem;
+  overflow: hidden;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.nav__logo img {
+  display: block;
+  width: 133%;
+}
+
+.nav ul {
+  list-style: none;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 4rem;
+}
+
+.nav a:link,
+.nav a:visited {
+  text-decoration: none;
 }
