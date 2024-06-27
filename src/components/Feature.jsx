@@ -2,7 +2,7 @@ const data = [
   {
     title: "We offer best services",
     content: "Lorem Ipsum is not simply random text",
-    img: "",
+    img: <img src="location" alt="" />,
   },
   {
     title: "Search",
