@@ -12,11 +12,11 @@ function Home() {
           to SellDome
         </h1>
 
-        <h4>
+        <p>
           Your Ultimate Fashion Marketplace
           <br />
           Discover. Connect. Create.
-        </h4>
+        </p>
 
         <button>Get Started</button>
       </header>
