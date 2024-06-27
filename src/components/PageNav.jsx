@@ -1,9 +1,10 @@
 import { Link, NavLink } from "react-router-dom";
+import styles from "./PageNav.module.css";
 
 function PageNav() {
   return (
-    <nav>
-      <img src="logo.svg" alt="selldome logo" />
+    <nav className={styles.nav}>
+      <img src="logo.png" alt="selldome logo" />
       <ul>
         <li>
           <NavLink to="/">Home</NavLink>
