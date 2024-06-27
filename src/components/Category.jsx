@@ -1,8 +1,30 @@
 const data = [
   {
     title: "Fabric",
-    content: `What looked like a small <br /> patchor purple fabric`,
-    img: "",
+    content: (
+      <p>
+        What looked like a small <br /> patch of purple fabric
+      </p>
+    ),
+    img: <img src="fabric-1.png" alt="fabric image" />,
+  },
+  {
+    title: "Linings",
+    content: (
+      <p>
+        What looked like a small <br /> patch of red lining
+      </p>
+    ),
+    img: <img src="fabric-2.png" alt="lining image" />,
+  },
+  {
+    title: "Fabric",
+    content: (
+      <p>
+        What looked like a small <br /> patch of purple fabric
+      </p>
+    ),
+    img: <img src="fabric-1.png" alt="fabric image" />,
   },
 ];
 
@@ -17,41 +39,13 @@ function Category() {
         </h2>
       </div>
 
-      <div className="category__container">
-        <div className="category_fabric">
-          <img src="" alt="" />
+      {data.map((item) => (
+        <div className="category__container">
+          <div className="category_fabric">{item.img}</div>
+          <h3>{item.title}</h3>
+          {item.content}
         </div>
-        <h3>Fabrics</h3>
-        <p>
-          What look like a small
-          <br />
-          patch or purple fabric
-        </p>
-      </div>
-
-      <div className="category__container">
-        <div className="category_fabric">
-          <img src="" alt="" />
-        </div>
-        <h3>Fabrics</h3>
-        <p>
-          What look like a small
-          <br />
-          patch or purple fabric
-        </p>
-      </div>
-
-      <div className="category__container">
-        <div className="category_fabric">
-          <img src="" alt="" />
-        </div>
-        <h3>Fabrics</h3>
-        <p>
-          What look like a small
-          <br />
-          patch or purple fabric
-        </p>
-      </div>
+      ))}
     </section>
   );
 }
