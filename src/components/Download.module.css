@@ -1,0 +1,40 @@
+.section__download {
+  color: #000;
+  padding: 3rem 6rem;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2.5rem;
+}
+
+.download__cloth {
+  border-radius: 1rem;
+}
+
+.download__cloth img {
+  display: block;
+  border-radius: 1rem;
+}
+
+.download__content {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.download__content h3 {
+  color: #621b3b;
+  font-size: 2.4rem;
+  margin-bottom: 1rem;
+}
+
+.download__content p {
+  font-size: 1.8rem;
+}
+
+.download__button {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
