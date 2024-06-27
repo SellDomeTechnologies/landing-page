@@ -19,6 +19,14 @@ function Home() {
         </p>
 
         <button>Get Started</button>
+
+        <div className={styles.header__vison}>
+          <p>
+            Selldome is revolutionizing the fashion industry by providing a
+            seamless platform for fashion <br /> designers and vendors to
+            connect, collaborate, and create stunning designs.
+          </p>
+        </div>
       </header>
     </>
   );
