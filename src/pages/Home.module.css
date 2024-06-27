@@ -2,7 +2,7 @@
   position: relative;
   color: #621b3b;
   min-height: 100vh;
-  padding: 0 6rem 12rem 6rem;
+  padding: 0 6rem 10rem 6rem;
   background: url(world-map.png);
   background-size: cover;
 
@@ -11,22 +11,6 @@
   justify-content: flex-end;
   flex-direction: column;
   gap: 2rem;
-}
-
-.header__vison {
-  width: 100%;
-  font-size: 2.4rem;
-  padding: 1rem 0;
-  text-align: center;
-  background: #fbe5aa;
-
-  display: flex;
-  align-items: center;
-  justify-content: center;
-
-  position: absolute;
-  bottom: 0;
-  left: 0;
 }
 
 .header h1 {
