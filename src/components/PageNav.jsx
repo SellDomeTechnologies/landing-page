@@ -3,6 +3,7 @@ import { NavLink } from "react-router-dom";
 function PageNav() {
   return (
     <nav>
+      <img src="logo.svg" alt="selldome logo" />
       <ul>
         <li>
           <NavLink to="/">Home</NavLink>
@@ -17,6 +18,9 @@ function PageNav() {
           <NavLink to="/resources">Resources</NavLink>
         </li>
       </ul>
+      <button>
+        <Link to="/signup">Sign Up</Link>
+      </button>
     </nav>
   );
 }
