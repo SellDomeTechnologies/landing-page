@@ -1,0 +1,9 @@
+.header {
+  min-height: 100vh;
+  background: url(world-map.png);
+  background-size: cover;
+
+  display: flex;
+  flex-direction: column;
+  gap: 5rem;
+}
