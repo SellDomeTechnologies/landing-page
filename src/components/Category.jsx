@@ -1,3 +1,5 @@
+import styles from "./Category.module.css";
+
 const data = [
   {
     title: "Fabric",
@@ -24,14 +26,14 @@ const data = [
         What looked like a small <br /> patch of purple fabric
       </p>
     ),
-    img: <img src="fabric-1.png" alt="fabric image" />,
+    img: <img src="fabric-3.png" alt="fabric image" />,
   },
 ];
 
 function Category() {
   return (
-    <section className="category">
-      <div className="category__text">
+    <section className={styles.category}>
+      <div className={styles.category__text}>
         <h3>Categories</h3>
         <h2>
           Our top value <br />
@@ -39,13 +41,15 @@ function Category() {
         </h2>
       </div>
 
-      {data.map((item) => (
-        <div className="category__container">
-          <div className="category_fabric">{item.img}</div>
-          <h3>{item.title}</h3>
-          {item.content}
-        </div>
-      ))}
+      <div className={styles.category__content}>
+        {data.map((item) => (
+          <div className={styles.category__container}>
+            <div className={styles.category__fabric}>{item.img}</div>
+            <h3>{item.title}</h3>
+            {item.content}
+          </div>
+        ))}
+      </div>
     </section>
   );
 }
