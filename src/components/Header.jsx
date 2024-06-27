@@ -1,6 +1,6 @@
 import styles from "./Header.module.css";
 
-function Home() {
+function Header() {
   return (
     <>
       <header className={styles.header}>
@@ -22,4 +22,4 @@ function Home() {
   );
 }
 
-export default Home;
+export default Header;
