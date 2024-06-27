@@ -1,10 +1,8 @@
-import PageNav from "./PageNav";
 import styles from "./Header.module.css";
 
 function Home() {
   return (
     <>
-      <PageNav />
       <header className={styles.header}>
         <h1>
           Welcome
