@@ -43,7 +43,7 @@ function Category() {
 
       <div className={styles.category__content}>
         {data.map((item) => (
-          <div className={styles.category__container}>
+          <div className={`swiper-slide ${styles.category__container}`}>
             <div className={styles.category__fabric}>{item.img}</div>
             <h3>{item.title}</h3>
             {item.content}
