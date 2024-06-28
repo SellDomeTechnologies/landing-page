@@ -7,6 +7,7 @@ import Discovery from "../components/Discovery";
 import Feature from "../components/Feature";
 import Market from "../components/Market";
 import Work from "../components/Work";
+import Today from "../components/Today";
 
 function Home() {
   return (
@@ -20,6 +21,7 @@ function Home() {
       <Feature />
       <Market />
       <Work />
+      <Today />
     </>
   );
 }
