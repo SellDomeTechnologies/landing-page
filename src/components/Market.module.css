@@ -13,6 +13,7 @@
 @media only screen and (max-width: 37.5em) {
   .section__market {
     flex-direction: column;
+    padding: 4rem;
   }
 }
 
@@ -50,4 +51,18 @@
   border-radius: 0.5rem;
   padding: 1.5rem 10rem;
   background: #621b3b;
+}
+
+@media only screen and (max-width: 37.5em) {
+  .market__content {
+    align-items: center;
+  }
+
+  .market__content p {
+    width: 100%;
+  }
+
+  .market__img {
+    display: none;
+  }
 }

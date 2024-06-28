@@ -31,3 +31,9 @@
 .section__today span {
   display: inline-block;
 }
+
+@media only screen and (max-width: 37.5em) {
+  .section__today {
+    padding: 4rem;
+  }
+}

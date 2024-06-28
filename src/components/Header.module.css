@@ -5,6 +5,7 @@
   padding: 0 6rem 8rem 6rem;
   background: url(world-map.png);
   background-size: cover;
+  background-position: center;
 
   display: flex;
   align-items: flex-start;
@@ -37,17 +38,19 @@
 @media only screen and (max-width: 37.5em) {
   .header {
     justify-content: center;
+    padding: 4rem;
   }
 
   .header h1 {
-    font-size: 6rem;
+    font-size: 4rem;
   }
 
   .header p {
-    font-size: 1.9rem;
+    font-size: 1.5rem;
   }
 
   .header button {
-    font-size: 1.6rem;
+    font-size: 1.3rem;
+    padding: 1.5rem 9rem;
   }
 }
