@@ -7,6 +7,12 @@
   gap: 10rem;
 }
 
+@media only screen and (max-width: 37.5em) {
+  .section__feature {
+    flex-direction: column;
+  }
+}
+
 .section__feature h2 {
   color: #621b3b;
   font-size: 1.8rem;

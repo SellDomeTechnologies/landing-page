@@ -35,10 +35,7 @@ function Category() {
     <section className={styles.category}>
       <div className={styles.category__text}>
         <h3>Categories</h3>
-        <h2>
-          Our top value <br />
-          categories for you
-        </h2>
+        <h2>Our top value categories for you</h2>
       </div>
 
       <div className={styles.category__content}>

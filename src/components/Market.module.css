@@ -10,6 +10,12 @@
   position: relative;
 }
 
+@media only screen and (max-width: 37.5em) {
+  .section__market {
+    flex-direction: column;
+  }
+}
+
 .market__content h2 {
   font-size: 3rem;
 }

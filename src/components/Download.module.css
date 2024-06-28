@@ -8,6 +8,12 @@
   gap: 2.5rem;
 }
 
+@media only screen and (max-width: 37.5em) {
+  .section__download {
+    flex-direction: column;
+  }
+}
+
 .download__cloth {
   border-radius: 1rem;
 }
@@ -15,6 +21,13 @@
 .download__cloth img {
   display: block;
   border-radius: 1rem;
+}
+
+@media only screen and (max-width: 37.5em) {
+  .download__cloth img {
+    width: 100%;
+    height: 100%;
+  }
 }
 
 .download__content {

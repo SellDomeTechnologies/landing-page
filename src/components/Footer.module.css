@@ -12,6 +12,12 @@
   row-gap: 1rem;
 }
 
+@media only screen and (max-width: 37.5em) {
+  .footer {
+    display: none;
+  }
+}
+
 .footer__logo {
   overflow: hidden;
   display: flex;
