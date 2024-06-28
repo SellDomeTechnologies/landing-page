@@ -9,6 +9,7 @@ import Market from "../components/Market";
 import Work from "../components/Work";
 import Today from "../components/Today";
 import Main from "../components/Main";
+import Footer from "../components/Footer";
 
 function Home() {
   return (
@@ -25,6 +26,7 @@ function Home() {
         <Work />
         <Today />
       </Main>
+      <Footer />
     </>
   );
 }

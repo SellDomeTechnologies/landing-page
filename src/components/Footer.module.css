@@ -1,0 +1,87 @@
+.footer {
+  font-size: 1.5rem;
+  color: #000;
+  padding: 6rem;
+
+  display: grid;
+  justify-items: flex-start;
+  align-items: center;
+  grid-template-columns: 40% repeat(4, 1fr);
+  grid-template-rows: repeat(10, max-content);
+  column-gap: 5rem;
+  row-gap: 1rem;
+}
+
+.footer__logo {
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 15rem;
+  height: 6rem;
+}
+
+.footer__logo img {
+  display: block;
+  width: 150%;
+  height: auto;
+}
+
+.footer > p {
+  grid-row: 2/3;
+  font-size: 1.6rem;
+  color: #621b3b;
+}
+
+.footer__btn {
+  grid-row: 3/4;
+  margin-top: 1rem;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.footer h3 {
+  font-size: 2.2rem;
+  grid-row: 5/6;
+  color: #621b3b;
+}
+
+.footer__social {
+  grid-row: 6/7;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.footer .footer__copyright {
+  grid-row: 10/11;
+}
+
+.footer h4 {
+  grid-row: 3/4;
+  align-self: end;
+  justify-self: start;
+}
+
+.footer ul {
+  list-style: none;
+}
+
+.footer ul {
+  grid-row: 4/8;
+}
+
+.footer ul:nth-of-type(2) {
+  grid-row: 4/9;
+}
+
+.footer ul {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
