@@ -21,7 +21,7 @@ const datas = [
 function Feature() {
   return (
     <section className={styles.section__feature}>
-      <div>
+      <div className={styles.feature}>
         <h2>Key Features</h2>
         <h1>We offer best services</h1>
         <p>
@@ -29,15 +29,19 @@ function Feature() {
           has roots in a piece of classical Latin literature from 45 BC.
         </p>
         {datas.map((data) => (
-          <div>
+          <div className={styles.feature__container}>
             <div>{data.img}</div>
-            <h3>{data.title}</h3>
-            <p>{data.content}</p>
+            <div>
+              <h3>{data.title}</h3>
+              <p>{data.content}</p>
+            </div>
           </div>
         ))}
       </div>
 
-      <div></div>
+      <div>
+        <img src="services-img.png" alt="services img icon" />
+      </div>
     </section>
   );
 }
