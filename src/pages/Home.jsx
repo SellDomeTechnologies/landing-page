@@ -8,20 +8,23 @@ import Feature from "../components/Feature";
 import Market from "../components/Market";
 import Work from "../components/Work";
 import Today from "../components/Today";
+import Main from "../components/Main";
 
 function Home() {
   return (
     <>
       <PageNav />
       <Header />
-      <AboutUs />
-      <Category />
-      <Download />
-      <Discovery />
-      <Feature />
-      <Market />
-      <Work />
-      <Today />
+      <Main>
+        <AboutUs />
+        <Category />
+        <Download />
+        <Discovery />
+        <Feature />
+        <Market />
+        <Work />
+        <Today />
+      </Main>
     </>
   );
 }
