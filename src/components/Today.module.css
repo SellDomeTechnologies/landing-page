@@ -1,4 +1,33 @@
-.section__work {
+.section__today {
   color: #621b3b;
-  background: linear-gradient(to right, #fbe5aa, #fbe5aa);
+  text-align: center;
+  padding: 12rem 6rem;
+  background: linear-gradient(to right, #fbe5aab7, #fbe5aabb),
+    url(today-map.png) no-repeat;
+  background-position: center;
+  background-size: 45%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.section__today h2 {
+  font-size: 3.5rem;
+}
+
+.section__today p {
+  font-size: 2rem;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.section__today span {
+  display: inline-block;
 }
