@@ -8,7 +8,7 @@
 
 @media only screen and (max-width: 37.5em) {
   .category {
-    padding: 8rem 6rem;
+    padding: 8rem 4rem;
     flex-direction: column;
     gap: 6rem;
   }
@@ -29,9 +29,10 @@
 }
 
 .category__content {
-  display: flex;
-  align-items: center;
-  gap: 1.5rem;
+  width: 100%;
+  position: relative;
+  height: 35rem;
+  overflow: hidden;
 }
 
 .category__container {
@@ -40,6 +41,17 @@
   flex-direction: column;
   text-align: center;
   gap: 1rem;
+
+  top: 0;
+  overflow: hidden;
+  position: absolute;
+  transition: transform 0.5s ease-out;
+}
+
+@media only screen and (max-width: 37.5em) {
+  .category__container {
+    width: 100%;
+  }
 }
 
 .category__container p {

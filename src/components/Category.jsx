@@ -1,4 +1,6 @@
+import { useEffect } from "react";
 import styles from "./Category.module.css";
+import { useState } from "react";
 
 const data = [
   {
@@ -31,6 +33,21 @@ const data = [
 ];
 
 function Category() {
+  const [arr, setArr] = useState(data);
+  const [counter, setCounter] = useState(0);
+
+  useEffect(function () {
+    const intervalId = setInterval(() => {
+      setCounter((prevCounter) => (prevCounter + 1) % data.length);
+      setArr((prevArr) => {
+        const firstItem = prevArr[0];
+        return [...prevArr.slice(1), firstItem];
+      });
+    }, 3000);
+
+    return () => clearInterval(intervalId);
+  }, []);
+
   return (
     <section className={styles.category}>
       <div className={styles.category__text}>
@@ -39,8 +56,14 @@ function Category() {
       </div>
 
       <div className={styles.category__content}>
-        {data.map((item) => (
-          <div className={`swiper-slide ${styles.category__container}`}>
+        {arr.map((item, index) => (
+          <div
+            className={styles.category__container}
+            style={{
+              transform: `translateX(${index * 100}%)`,
+              paddingRight: "2rem",
+            }}
+          >
             <div className={styles.category__fabric}>{item.img}</div>
             <h3>{item.title}</h3>
             {item.content}
