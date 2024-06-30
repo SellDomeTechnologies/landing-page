@@ -1,6 +1,6 @@
 .section__discovery {
   color: #000;
-  background: url(round-background.svg) no-repeat,
+  background: url(../../public/round-background.svg) no-repeat,
     linear-gradient(
       to right,
       rgba(251, 229, 170, 0.713),
