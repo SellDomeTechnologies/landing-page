@@ -7,12 +7,6 @@ function App() {
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/about" element={<AboutUs />} />
-        {/*
-        <Route path="product" element={<Product />} />
-        <Route path="login" element={<Login />} />
-        <Route path="app" element={<AppLayout />} />
-        <Route path="*" element={<PageNotFound />} /> */}
       </Routes>
     </BrowserRouter>
   );

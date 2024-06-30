@@ -13,17 +13,17 @@ function PageNav() {
             <NavLink to="/">Home</NavLink>
           </li>
           <li>
-            <NavLink to="/about">About us</NavLink>
+            <NavLink>About us</NavLink>
           </li>
           <li>
-            <NavLink to="/pricing">Pricing</NavLink>
+            <NavLink>Pricing</NavLink>
           </li>
           <li>
-            <NavLink to="/resources">Resources</NavLink>
+            <NavLink>Resources</NavLink>
           </li>
         </ul>
         <button>
-          <Link to="/signup">Sign Up</Link>
+          <Link>Sign Up</Link>
         </button>
       </nav>
     </>

@@ -11,7 +11,7 @@ function Work() {
         </div>
       </div>
       <div className={styles.work__content}>
-        <h3>Vendor</h3>
+        <h3>Fashion Designer</h3>
         <div className={styles.vendor__img}>
           <img src="fashion-img.png" alt="vendors chain" />
         </div>
