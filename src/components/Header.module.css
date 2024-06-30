@@ -3,7 +3,7 @@
   color: #621b3b;
   min-height: 90vh;
   padding: 0 6rem 8rem 6rem;
-  background: url(world-map.png);
+  background: url(../../public/world-map.png);
   background-size: cover;
   background-position: center;
 
