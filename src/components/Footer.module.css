@@ -96,7 +96,7 @@
 
   .footer__logo {
     grid-column: 1 / 4;
-    width: 100%;
+    width: 60%;
     height: 9rem;
   }
 

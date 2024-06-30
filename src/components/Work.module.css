@@ -43,11 +43,13 @@
 
 @media only screen and (max-width: 37.5em) {
   .section__work h2 {
-    font-size: 2.2rem;
+    font-size: 2rem;
+    padding: 1rem 2rem;
   }
 
   .section__work h3 {
-    font-size: 2rem;
+    font-size: 1.8rem;
+    padding: 0.5rem 1rem;
   }
 }
 
