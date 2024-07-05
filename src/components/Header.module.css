@@ -1,8 +1,8 @@
 .header {
   position: relative;
   color: #621b3b;
-  min-height: 88vh;
-  padding: 0 6rem 8rem 6rem;
+  min-height: 90vh;
+  padding: 0 6rem 10rem 8rem;
   background: url(../../public/world-map.png);
   background-size: cover;
   background-position: center;
