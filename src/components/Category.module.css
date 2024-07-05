@@ -28,56 +28,75 @@
   }
 }
 
-.category__content {
-  width: 100%;
-  position: relative;
-  height: 35rem;
-  overflow: hidden;
-}
-
-.category__container {
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  text-align: center;
-  gap: 1rem;
-
-  top: 0;
-  overflow: hidden;
-  position: absolute;
-  transition: transform 0.5s ease-out;
-}
-
-@media only screen and (max-width: 37.5em) {
-  .category__container {
-    width: 100%;
-  }
-}
-
-.category__container p {
-  color: #191825;
-  font-size: 1.8rem;
-}
-
-.category__fabric {
-  width: 35rem;
-  height: 25rem;
-}
-
-.category__fabric img {
-  display: block;
-  width: 100%;
-  height: 100%;
-}
-
 .category h2 {
   font-size: 3rem;
   color: #191825;
 }
 
 .category h3 {
-  font-size: 2rem;
+  font-size: 2.3rem;
   letter-spacing: 0.3rem;
   text-transform: uppercase;
   color: #621b3b;
+}
+
+.category p {
+  font-size: 1.8rem;
+  color: #621b3b;
+}
+
+.carouselContainer {
+  width: 100%;
+  height: 35rem;
+  overflow: hidden;
+  position: relative;
+}
+
+.carouselCard {
+  display: flex;
+  align-items: stretch;
+  justify-content: center;
+  flex-direction: column;
+
+  width: 100%;
+  height: 100%;
+  text-align: center;
+}
+
+.carouselImg {
+  width: 35rem;
+  height: 25rem;
+  overflow: hidden;
+  border-radius: 4rem;
+  margin-bottom: 1.5rem;
+}
+
+.carouselImg img {
+  border-radius: 2rem;
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.carouselTrack {
+  display: flex;
+  position: absolute;
+  left: 0;
+  justify-content: center;
+  align-items: center;
+  height: 80px;
+  gap: 16px;
+  width: 200%;
+  height: 100%;
+
+  animation: slide 20s linear infinite;
+}
+
+@keyframes slide {
+  0% {
+    left: 0;
+  }
+  100% {
+    left: -100%;
+  }
 }
