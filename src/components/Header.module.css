@@ -28,11 +28,16 @@
 
 .header button {
   font-size: 1.4rem;
+  cursor: pointer;
 
   color: #fff;
   border-radius: 1rem;
   padding: 1.5rem 10rem;
   background-color: #821b4a;
+}
+
+.header button:hover {
+  background-color: #9e225a;
 }
 
 @media only screen and (max-width: 37.5em) {
