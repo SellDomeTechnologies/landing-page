@@ -4,9 +4,8 @@ function AboutUs() {
   return (
     <section className={styles.section}>
       <p>
-        Selldome is revolutionizing the fashion industry by providing a seamless
-        platform for fashion <br /> designers and vendors to connect,
-        collaborate, and create stunning designs.
+        SellDome is your gateway to a streamlined and transformative fashion
+        journey, offering <br /> unparalleled opportunities for success.
       </p>
     </section>
   );
