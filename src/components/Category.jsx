@@ -7,33 +7,71 @@ const data = [
     title: "Fabric",
     content: (
       <p>
-        What looked like a small <br /> patch of purple fabric
+        Material used to make clothing, <br /> available in various texture.
       </p>
     ),
-    img: <img src="fabric-1.png" alt="fabric image" />,
+    img: <img src="fabric-1.svg" alt="fabric image" />,
+  },
+  {
+    title: "Embellishments",
+    content: (
+      <p>
+        Decorative items added to garments, <br /> like beads, sequins, or
+        embroidery.
+      </p>
+    ),
+    img: <img src="fabric-2.svg" alt="lining image" />,
   },
   {
     title: "Linings",
     content: (
       <p>
-        What looked like a small <br /> patch of red lining
+        Inner layer of a fabric done into <br /> garments for a neat finish .
       </p>
     ),
-    img: <img src="fabric-2.png" alt="lining image" />,
+    img: <img src="fabric-3.svg" alt="fabric image" />,
   },
   {
-    title: "Fabric",
+    title: "Sewing Tools / Equipment",
     content: (
       <p>
-        What looked like a small <br /> patch of purple fabric
+        Instruments used in sewing such <br /> as needles, and sewing machine
       </p>
     ),
-    img: <img src="fabric-3.png" alt="fabric image" />,
+    img: <img src="fabric-4.svg" alt="fabric image" />,
+  },
+  {
+    title: "Fusibles",
+    content: (
+      <p>
+        Adhesive materials used to bond <br /> fabrics together with heat.
+      </p>
+    ),
+    img: <img src="fabric-5.svg" alt="fabric image" />,
+  },
+  {
+    title: "Sewing Accessories",
+    content: (
+      <p>
+        Items that aid in sewing including pins, measuring tapes and thimbles.
+      </p>
+    ),
+    img: <img src="fabric-6.svg" alt="fabric image" />,
+  },
+  {
+    title: "Fashion Apparels and Accessories",
+    content: (
+      <p>
+        Clothing items and complementary <br /> pieces like hats, belts and
+        jewelry.
+      </p>
+    ),
+    img: <img src="fabric-7.svg" alt="fabric image" />,
   },
 ];
 
 function Category() {
-  const [arr, setArr] = useState(data);
+  const [arr] = useState(data);
 
   return (
     <section className={styles.category}>
