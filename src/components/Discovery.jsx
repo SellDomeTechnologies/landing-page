@@ -4,12 +4,11 @@ function Discovery() {
   return (
     <section className={styles.section__discovery}>
       <div className={styles.discovery__content}>
-        <h2>Effortless Vendor Discovery</h2>
+        <h2>Seamless Connection with Vendors</h2>
         <p>
-          Say goodbye to endless searches and countless hours spent sourcing
-          materials. SellDome connects fashion designers with a curated network
-          of reputable vendors, making it simple to find the perfect fabrics,
-          trims, and accessories for your designs.
+          Selldome connects fashion designers with a curated network of
+          reputable vendors, making it easy to purchase the perfect materials,
+          accessories and so on that enable you bring your designs to life.
         </p>
       </div>
       <div className={styles.discovery__img}>
