@@ -5,15 +5,15 @@ function Header() {
     <>
       <header className={styles.header}>
         <h1>
-          Welcome
+          Your Ultimate Fashion
           <br />
-          to SellDome
+          Marketplace
         </h1>
 
         <p>
-          Your Ultimate Fashion Marketplace
-          <br />
           Discover. Connect. Create.
+          <br />
+          Africa's Ultimate Fashion Marketplace
         </p>
 
         <button>Get Started</button>
