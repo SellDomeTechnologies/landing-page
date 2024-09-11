@@ -71,5 +71,16 @@
 
 .follow {
   position: absolute;
-  right: 2rem;
+  color: #621b3b;
+  right: 13rem;
+  bottom: 4rem;
+
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 1rem;
+}
+
+.follow h3 {
+  font-size: 2rem;
 }
