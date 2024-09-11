@@ -12,6 +12,11 @@ function Market() {
           vision to life.
         </p>
 
+        <p style={{ display: "flex", flexDirection: "column", gap: "1rem" }}>
+          <span>Download the SellDome App Now and Start Creating!</span>
+          <span>Available on the App Store and Google Play Store</span>
+        </p>
+
         <div className={styles.market__btn}>
           <button>
             <img src="app-store.png" alt="app-store image" />
@@ -20,7 +25,6 @@ function Market() {
             <img src="google-play.png" alt="google-play image" />
           </button>
         </div>
-        <button className={styles.market__start}>Get Started</button>
       </div>
 
       <div className={styles.market__img}>
