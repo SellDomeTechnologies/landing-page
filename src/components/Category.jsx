@@ -83,14 +83,14 @@ function Category() {
       <div className={styles.carouselContainer}>
         <div className={styles.carouselTrack}>
           {arr.map((item) => (
-            <div className={styles.carouselCard}>
+            <div className={styles.carouselCard} key={item.title}>
               <div className={styles.carouselImg}>{item.img}</div>
               <h3>{item.title}</h3>
               {item.content}
             </div>
           ))}
           {arr.map((item) => (
-            <div className={styles.carouselCard}>
+            <div className={styles.carouselCard} key={item.title}>
               <div className={styles.carouselImg}>{item.img}</div>
               <h3>{item.title}</h3>
               {item.content}
