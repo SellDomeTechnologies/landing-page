@@ -5,15 +5,14 @@ function Today() {
     <section className={styles.section__today}>
       <h2>Join Us Today</h2>
       <p>
+        <span>Join SellDome Today and Transform Your Fashion Journey!</span>
         <span>
-          Join SellDome Today and Elevate Your Fashion Game! <br /> Ready to
-          take your fashion journey to new heights? Join SellDome today and
-          experience the future of fashion sourcing.
+          Download the app now to unlock the full potential of SellDome and
+          revolutionize your approach to fashion commerce.
         </span>
         <span>
-          Whether you're a vendor looking to expand your reach or a fashion
-          designer in search of <br /> inspiration, SellDome has everything you
-          need to succeed.
+          Whether you're a visionary designer or a forward-thinking vendor,
+          SellDome is your partner in innovation and success.
         </span>
       </p>
     </section>
