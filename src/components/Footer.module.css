@@ -84,3 +84,9 @@
 .follow h3 {
   font-size: 2rem;
 }
+
+.footer__social {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
