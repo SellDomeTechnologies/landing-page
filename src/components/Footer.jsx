@@ -48,7 +48,7 @@ function Footer() {
           <img src="linkedin-icon.png" alt="linkedin icon" />
         </div>
         <p className={styles.footer__copyright}>
-          &copy; Copyright 2024 SellDome Africa
+          Selldome Africa. All rights reserved 2024
         </p>
       </div>
     </footer>
