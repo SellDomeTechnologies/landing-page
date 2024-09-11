@@ -38,7 +38,7 @@ function Footer() {
         </div>
       </div>
 
-      <div>
+      <div className={styles.follow}>
         <h3>Follow Us</h3>
         <div className={styles.footer__social}>
           <img src="youtube-icon.png" alt="youtube icon" />
