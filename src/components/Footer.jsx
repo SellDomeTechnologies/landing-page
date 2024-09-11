@@ -32,7 +32,7 @@ function Footer() {
         &copy; Copyright 2024 SellDome Africa
       </p> */}
 
-      <div>
+      <div className={styles.footer__details}>
         <div>
           <h4>Company</h4>
           <ul className={styles.footer__company}>
