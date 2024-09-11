@@ -21,17 +21,6 @@ function Footer() {
         </div>
       </div>
 
-      {/* <div className={styles.footer__social}>
-        <img src="youtube-icon.png" alt="youtube icon" />
-        <img src="facebook-icon.png" alt="facebook icon" />
-        <img src="twitter-icon.png" alt="twitter icon" />
-        <img src="insta-icon.png" alt="instgram icon" />
-        <img src="linkedin-icon.png" alt="linkedin icon" />
-      </div> */}
-      {/* <p className={styles.footer__copyright}>
-        &copy; Copyright 2024 SellDome Africa
-      </p> */}
-
       <div className={styles.footer__details}>
         <div>
           <h4>Services</h4>
@@ -47,6 +36,20 @@ function Footer() {
             <li>About Us</li>
           </ul>
         </div>
+      </div>
+
+      <div>
+        <h3>Follow Us</h3>
+        <div className={styles.footer__social}>
+          <img src="youtube-icon.png" alt="youtube icon" />
+          <img src="facebook-icon.png" alt="facebook icon" />
+          <img src="twitter-icon.png" alt="twitter icon" />
+          <img src="insta-icon.png" alt="instgram icon" />
+          <img src="linkedin-icon.png" alt="linkedin icon" />
+        </div>
+        <p className={styles.footer__copyright}>
+          &copy; Copyright 2024 SellDome Africa
+        </p>
       </div>
     </footer>
   );
