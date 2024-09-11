@@ -3,7 +3,7 @@
   font-size: 2.4rem;
   text-align: center;
   padding: 2rem;
-  background: url("/public/about.svg");
+  background: url("/public/about.svg") no-repeat;
 
   display: flex;
   align-items: center;
