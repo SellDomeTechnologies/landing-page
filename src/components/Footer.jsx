@@ -34,22 +34,17 @@ function Footer() {
 
       <div className={styles.footer__details}>
         <div>
-          <h4>Company</h4>
+          <h4>Services</h4>
           <ul className={styles.footer__company}>
-            <li>About us</li>
-            <li>Contact us</li>
-            <li>Careers</li>
-            <li>Press</li>
+            <li>Online Marketplace</li>
+            <li>Industry Trends</li>
           </ul>
         </div>
 
         <div>
-          <h4>Services</h4>
+          <h4>Company</h4>
           <ul className={styles.footer__services}>
-            <li>Digital Marketing</li>
-            <li>Content Writing</li>
-            <li>SEO for businesses</li>
-            <li>UI design</li>
+            <li>About Us</li>
           </ul>
         </div>
       </div>
