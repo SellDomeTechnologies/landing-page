@@ -16,15 +16,9 @@ function PageNav() {
             <Link>About us</Link>
           </li>
           <li>
-            <Link>Pricing</Link>
-          </li>
-          <li>
-            <Link>Resources</Link>
+            <button>Sign up</button>
           </li>
         </ul>
-        <button>
-          <Link>Sign Up</Link>
-        </button>
       </nav>
     </>
   );
