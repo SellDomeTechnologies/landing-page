@@ -1,4 +1,15 @@
 .footer {
   display: flex;
   color: #000;
+  padding: 3rem 6rem;
+}
+
+.footer__details {
+  display: flex;
+  align-items: flex-start;
+  margin-left: auto;
+}
+
+.footer__details ul {
+  list-style: none;
 }
