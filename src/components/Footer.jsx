@@ -3,7 +3,7 @@ import styles from "./Footer.module.css";
 function Footer() {
   return (
     <footer className={styles.footer}>
-      <div>
+      <div className={styles.footer__company}>
         <figure className={styles.footer__logo}>
           <img src="logo.png" alt="logo icon" />
         </figure>
