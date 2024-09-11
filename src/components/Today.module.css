@@ -1,17 +1,16 @@
 .section__today {
-  color: #621b3b;
+  color: #fff;
   text-align: center;
   padding: 12rem 6rem;
-  background: linear-gradient(to right, #fbe5aab7, #fbe5aabb),
-    url(today-bg.svg) no-repeat;
+  background: url(today-bg.svg) no-repeat;
   background-position: center;
-  background-size: 45%;
+  background-size: cover;
 
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  gap: 2rem;
+  gap: 3.5rem;
 }
 
 .section__today h2 {
