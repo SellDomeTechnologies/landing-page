@@ -34,5 +34,11 @@
 @media only screen and (max-width: 37.5em) {
   .section__today {
     padding: 4rem;
+    gap: 2rem;
+  }
+
+  .section__today p {
+    font-size: 1.7rem;
+    font-weight: 600;
   }
 }
