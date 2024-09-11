@@ -1,7 +1,7 @@
 .header {
   position: relative;
   color: #621b3b;
-  min-height: 90vh;
+  min-height: 95vh;
   padding: 0 6rem 10rem 8rem;
   background: url(/world-map.svg);
   background-size: cover;
