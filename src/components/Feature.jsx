@@ -29,7 +29,7 @@ function Feature() {
           has roots in a piece of classical Latin literature from 45 BC.
         </p>
         {datas.map((data) => (
-          <div className={styles.feature__container}>
+          <div className={styles.feature__container} key={data.title}>
             <div>{data.img}</div>
             <div>
               <h3>{data.title}</h3>
