@@ -4,6 +4,7 @@
   text-align: center;
   padding: 2rem;
   background: url("/about.svg") no-repeat;
+  background-size: cover;
 
   display: flex;
   align-items: center;
