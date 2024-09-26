@@ -1,0 +1,44 @@
+.section__today {
+  color: #fff;
+  text-align: center;
+  padding: 12rem 6rem;
+  background: url(/today-bg.svg) no-repeat;
+  background-position: center;
+  background-size: cover;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 3.5rem;
+}
+
+.section__today h2 {
+  font-size: 3.5rem;
+}
+
+.section__today p {
+  font-size: 2rem;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.section__today span {
+  display: inline-block;
+}
+
+@media only screen and (max-width: 37.5em) {
+  .section__today {
+    padding: 4rem;
+    gap: 2rem;
+  }
+
+  .section__today p {
+    font-size: 1.7rem;
+    font-weight: 600;
+  }
+}
