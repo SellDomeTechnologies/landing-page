@@ -1,0 +1,56 @@
+name: Build and Deploy React + Vite App
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    # Checkout the repository
+    - name: Checkout code
+      uses: actions/checkout@v3
+
+    # Set up Node.js environment
+    - name: Set up Node.js
+      uses: actions/setup-node@v3
+      with:
+        node-version: '18'  # Choose the version of Node.js that your project uses
+        cache: 'npm'
+
+    # Install dependencies
+    - name: Install dependencies
+      run: npm ci
+
+    # Run the Vite build process
+    - name: Build the application
+      run: npm run build
+
+    # Upload the build artifacts for later steps or deployment
+    - name: Upload build artifacts
+      uses: actions/upload-artifact@v3
+      with:
+        name: dist
+        path: dist/
+
+  deploy:
+    runs-on: ubuntu-latest
+    needs: build
+
+    steps:
+    # Download the build artifact from the previous job
+    - name: Download build artifacts
+      uses: actions/download-artifact@v3
+      with:
+        name: dist
+
+    # Optionally deploy to a hosting service like AWS, Netlify, or Vercel
+    # Example: Deploy to AWS S3 or another service
+    - name: Deploy to S3
+      run: echo "Deploying to S3 or any other hosting service"
