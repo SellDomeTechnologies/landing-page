@@ -1,6 +1,7 @@
 // Category.jsx
 import React, { useEffect, useRef, useState } from 'react';
 import styles from './Category.module.css';
+//change
 
 const data = [
   {
