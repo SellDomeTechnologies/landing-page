@@ -1,3 +1,4 @@
+//Footer.jsx
 import styles from "./Footer.module.css";
 
 function Footer() {
@@ -5,7 +6,8 @@ function Footer() {
     <footer className={styles.footer}>
       <div className={styles.footer__company}>
         <figure className={styles.footer__logo}>
-          <img src="logo.png" alt="logo icon" />
+          <img src="logo.png" alt="selldome logo" />
+        <span className={styles.logo__text}>SELLDOME</span>
         </figure>
         <p>
           Download the SellDome App Now and Start Creating! <br /> Available on
