@@ -8,19 +8,22 @@ function Download() {
       </div>
       <div className={styles.download__content}>
         <h3>
-          With our innovative moble app, finding the perfect materials and
-          accessories for your next masterpiece have never been easier.
+          Effortless Product Discovery
         </h3>
+        <p><b>
+          With our innovative moble app, finding the perfect materials and
+          accessories for your next masterpiece have never been easier.</b>
+        </p>
         <p>Download the SellDome App Now and Start Creating!</p>
-        <p>Available on the App Store and Google Play.</p>
+        <p>Available on the App Store and Google Play Store.</p>
         <div className={styles.download__button}>
-          <button>
+          <button className={styles.download__app_button}>
             <img src="app-store.png" alt="download btn" />
           </button>
-          <button>
+          <button className={styles.download__app_button}>
             <img src="google-play.png" alt="download btn" />
           </button>
-        </div>
+      </div>
       </div>
     </section>
   );

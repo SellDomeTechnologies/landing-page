@@ -18,12 +18,13 @@ function Market() {
         </p>
 
         <div className={styles.market__btn}>
-          <button>
-            <img src="app-store.png" alt="app-store image" />
+          <button className={styles.market__app_btn}>
+            <img src="app-store.png" alt="download btn" />
           </button>
-          <button>
-            <img src="google-play.png" alt="google-play image" />
+          <button className={styles.market__app_btn}>
+            <img src="google-play.png" alt="download btn" />
           </button>
+      {/* </div> */}
         </div>
       </div>
 

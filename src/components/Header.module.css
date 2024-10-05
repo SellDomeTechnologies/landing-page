@@ -1,17 +1,17 @@
 .header {
   position: relative;
   color: #621b3b;
-  min-height: 95vh;
+  min-height: 100vh;
   padding: 0 6rem 10rem 8rem;
   background: url(/world-map.svg);
-  background-size: cover;
+  background-size: 90%; 
   background-position: center;
-
+  background-repeat: no-repeat;
   display: flex;
   align-items: flex-start;
   justify-content: flex-end;
   flex-direction: column;
-  gap: 2rem;
+  gap: 3rem;
 }
 
 .header h1 {
@@ -23,27 +23,37 @@
 .header p {
   font-size: 1.8rem;
   font-weight: 600;
-  color: #000;
+  color: #621b3b;
 }
 
 .header button {
   font-size: 1.4rem;
   cursor: pointer;
-
   color: #fff;
   border-radius: 1rem;
   padding: 1.5rem 10rem;
   background-color: #821b4a;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.8);
+  transition: all 0.3s ease;
+  border: none;
 }
 
 .header button:hover {
   background-color: #9e225a;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
+}
+
+.header button:active {
+  transform: translateY(1px);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 @media only screen and (max-width: 37.5em) {
   .header {
     justify-content: center;
     padding: 4rem;
+    background-size: 390%;
   }
 
   .header h1 {
@@ -51,11 +61,12 @@
   }
 
   .header p {
-    font-size: 1.5rem;
+    font-size: 1.7rem;
   }
 
   .header button {
-    font-size: 1.3rem;
-    padding: 1.5rem 9rem;
+    font-size: 1.2rem;
+    padding: 1.2rem 7rem;
+    margin-top: 1rem;
   }
 }
