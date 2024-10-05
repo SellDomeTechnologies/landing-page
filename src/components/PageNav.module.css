@@ -24,7 +24,8 @@
 }
 
 .nav__logo img {
-  width: 7rem;
+  display: block;
+  width: 80px;
   height: auto;
 }
 
