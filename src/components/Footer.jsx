@@ -12,11 +12,11 @@ function Footer() {
           the App Store and Google Play.
         </p>
         <div className={styles.footer__btn}>
-          <button>
-            <img src="app-store.png" alt="app-store-image" />
+        <button className={styles.footer__app_btn}>
+            <img src="app-store.png" alt="download btn" />
           </button>
-          <button>
-            <img src="google-play.png" alt="google-play-image" />
+          <button className={styles.footer__app_btn}>
+            <img src="google-play.png" alt="download btn" />
           </button>
         </div>
       </div>

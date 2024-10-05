@@ -1,6 +1,5 @@
-import { useEffect } from "react";
-import styles from "./Category.module.css";
 import { useState } from "react";
+import styles from "./Category.module.css";
 
 const data = [
   {

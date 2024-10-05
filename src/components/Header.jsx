@@ -9,13 +9,10 @@ function Header() {
           <br />
           Marketplace
         </h1>
-
         <p>
-          Discover. Connect. Create.
+          Connect. Create. Collaborate.
           <br />
-          Africa's Ultimate Fashion Marketplace
         </p>
-
         <button>Get Started</button>
       </header>
     </>
