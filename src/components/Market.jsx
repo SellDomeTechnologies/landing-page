@@ -9,11 +9,9 @@ function Market() {
         <div className={styles.market__content}>
           <h2>Expand Your Reach, Grow Your Sales</h2>
           <p>
-          Whether you're a vendor looking to showcase your unique fabrics and accessories to a 
-          larger audience or a fashion designer in search of premium materials for your next creation, 
-          our marketplace brings both worlds together. Discover a seamless platform where vendors expand their reach, 
-          and designers find exactly what they need to bring their visions to life. Join today and be part of a thriving 
-          community that fuels creativity and growth for everyone involved.
+          Are you a vendor looking to showcase your unique fabrics and accessories to a
+          larger audience or a fashion designer in search of premium materials for your next creation,
+          our marketplace brings both worlds together.
           </p>
           <div className={styles.market__download}>
             <p>Download the SellDome App Now and Start Creating!</p>

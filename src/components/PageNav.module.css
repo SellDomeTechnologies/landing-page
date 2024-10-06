@@ -110,7 +110,7 @@
 
 @media only screen and (max-width: 37.5em) {
   .nav {
-    padding: 1rem 2rem;
+    padding: 1rem 1rem;
   }
 
   .nav.scrolled {
