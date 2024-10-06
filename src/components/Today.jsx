@@ -5,7 +5,7 @@ function Today() {
     <section className={styles.section__today}>
       <h2>Join Us Today</h2>
       <p>
-        <span>Join SellDome Today and Transform Your Fashion Journey!</span>
+        <span></span>
         <span>
           Download the app now to unlock the full potential of SellDome and
           revolutionize your approach to fashion commerce.

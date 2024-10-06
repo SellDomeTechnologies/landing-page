@@ -47,7 +47,7 @@
 
 .carouselContainer {
   width: calc(100% - 42rem);
-  height: 45rem;  /* Increased height to accommodate content */
+  height: 45rem;
   overflow: hidden;
   position: relative;
 }
