@@ -1,16 +1,23 @@
 .section__feature {
   color: #000;
   padding: 6rem;
-
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   gap: 10rem;
 }
 
-@media only screen and (max-width: 37.5em) {
-  .section__feature {
-    flex-direction: column;
-  }
+.left_content {
+  width: 50%;
+}
+
+.image_container {
+  margin-top: 2rem;
+}
+
+.left_content img {
+  width: 100%;
+  height: auto;
+  display: block;
 }
 
 .section__feature h2 {
@@ -27,57 +34,104 @@
 
 .feature {
   width: 50%;
-}
-
-.feature > p {
-  margin-bottom: 2rem;
-}
-
-.section__feature p {
-  font-size: 1.8rem;
-  color: #191825;
-}
-
-.section__feature img {
-  display: flex;
-  width: 100%;
-  height: 100%;
+  padding-top: 10%;
 }
 
 .feature__container {
   display: flex;
-  align-items: center;
-  justify-content: flex-start;
-  padding: 3rem 0;
-  gap: 3rem;
+  align-items: flex-start;
+  gap: 2rem;
+  margin-bottom: 2rem;
 }
 
-.feature__container h3 {
-  font-size: 2rem;
+.scissorsIcon {
+  width: 86px;
+  height: 87px;
+  opacity: 1;
+}
+
+.feature__container p {
+  font-family: 'SF Pro Display', sans-serif;
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 38.4px;
+  text-align: left;
+  color: black;
   margin-bottom: 1rem;
 }
 
-@media only screen and (max-width: 37.5em) {
-  .section__feature {
-    padding: 4rem;
-  }
+.designer_title {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  color: #EA4335;
+}
 
+@media only screen and (max-width: 768px) {
+  .section__feature {
+    padding: 3rem 2rem;
+    flex-direction: column;
+    gap: 4rem;
+  }
+  
+  .left_content,
   .feature {
     width: 100%;
   }
-
-  .feature__container div:nth-of-type(1) {
-    width: 7rem;
-    height: auto;
+  
+  .section__feature h1 {
+    font-size: 2.5rem;
   }
-
-  .feature__container div:nth-of-type(1) img {
-    display: block;
+  
+  .section__feature h2 {
+    font-size: 1.5rem;
+  }
+  
+  .feature {
+    padding-top: 0;
+  }
+  
+  .feature__container {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 1.5rem;
+  }
+  
+  .scissorsIcon {
+    width: 60px;
+    height: 60px;
+  }
+  
+  .designer_title {
+    font-size: 2rem;
+    text-align: center;
+  }
+  
+  .feature__container p {
+    font-size: 18px;
+    line-height: 1.6;
+    text-align: left;
+  }
+  
+  .content {
     width: 100%;
-    height: 100%;
   }
+}
 
-  .feature__container h3 {
+@media only screen and (max-width: 480px) {
+  .section__feature {
+    padding: 2rem 1rem;
+  }
+  
+  .section__feature h1 {
+    font-size: 2rem;
+  }
+  
+  .designer_title {
     font-size: 1.8rem;
+  }
+  
+  .feature__container p {
+    font-size: 16px;
   }
 }

@@ -70,15 +70,17 @@
   padding: 1rem 3rem;
   border: 2px solid #621b3b;
   border-radius: 0.75rem;
-  background: none;
-  color: #621b3b;
+  /* background: none; */
+  background: #621b3b;
+  color: #FFF;
   cursor: pointer;
   transition: all 0.3s ease;
 }
 
 .nav button:hover {
-  background: #621b3b;
-  color: #fff;
+  /* background: #621b3b; */
+  background: #FFF;
+  color: #621b3b;
 }
 
 .hamburger {
