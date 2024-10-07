@@ -20,5 +20,3 @@ function Today() {
 }
 
 export default Today;
-
-//trying out
