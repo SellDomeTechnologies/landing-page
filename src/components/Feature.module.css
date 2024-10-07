@@ -1,13 +1,30 @@
+/* Feature.module.css */
 .section__feature {
   color: #000;
-  padding: 6rem;
+  padding: 4rem 2rem;
+  width: 100%;
+  overflow: hidden;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
   display: flex;
   align-items: flex-start;
-  gap: 10rem;
+  gap: 4rem;
 }
 
 .left_content {
-  width: 50%;
+  flex: 1;
+  min-width: 0;
+}
+
+.right_content {
+  flex: 1;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  margin-top: 80px;
 }
 
 .image_container {
@@ -15,79 +32,126 @@
 }
 
 .left_content img {
-  width: 100%;
+  max-width: 100%;
   height: auto;
   display: block;
 }
 
 .section__feature h2 {
   color: #621b3b;
-  font-size: 1.8rem;
+  font-size: clamp(1.2rem, 2vw, 1.8rem);
   text-transform: uppercase;
   margin-bottom: 1rem;
 }
 
 .section__feature h1 {
-  font-size: 3rem;
+  font-size: clamp(1.8rem, 3vw, 3rem);
   margin-bottom: 1rem;
 }
 
 .feature {
-  width: 50%;
-  padding-top: 10%;
+  position: relative;
+  height: 600px;
+  overflow: hidden;
+}
+
+.feature__slide_container {
+  position: relative;
+  height: 100%;
 }
 
 .feature__container {
   display: flex;
   align-items: flex-start;
   gap: 2rem;
-  margin-bottom: 2rem;
+  position: absolute;
+  width: 100%;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.5s ease-in-out, visibility 0.5s ease-in-out;
+}
+
+.feature__container.active {
+  opacity: 1;
+  visibility: visible;
 }
 
 .scissorsIcon {
   width: 86px;
   height: 87px;
-  opacity: 1;
+  flex-shrink: 0;
+}
+
+.content {
+  flex: 1;
+  min-width: 0;
 }
 
 .feature__container p {
   font-family: 'SF Pro Display', sans-serif;
-  font-size: 22px;
+  font-size: clamp(16px, 2vw, 22px);
   font-weight: 400;
-  line-height: 38.4px;
+  line-height: 1.6;
   text-align: left;
   color: black;
   margin-bottom: 1rem;
 }
 
 .designer_title {
-  font-size: 2.5rem;
+  font-size: clamp(1.8rem, 2.5vw, 2.5rem);
   margin-bottom: 1rem;
-  color: #EA4335;
+}
+
+.navigation {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 2rem;
+}
+
+.navButton {
+  width: 40px;
+  height: 40px;
+  border: none;
+  background-color: transparent;
+  color: rgb(191, 191, 191);
+  cursor: pointer;
+  font-size: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: color 0.3s ease;
+}
+
+.navButton.activeNav {
+  color: #621b3b;
+}
+
+.feature {
+  position: relative;
+  height: 600px;
+  overflow: hidden;
+  touch-action: pan-y pinch-zoom;
 }
 
 @media only screen and (max-width: 768px) {
-  .section__feature {
-    padding: 3rem 2rem;
+  .container {
     flex-direction: column;
-    gap: 4rem;
+    gap: 2rem;
   }
   
   .left_content,
-  .feature {
+  .right_content {
     width: 100%;
   }
   
-  .section__feature h1 {
-    font-size: 2.5rem;
-  }
-  
-  .section__feature h2 {
-    font-size: 1.5rem;
+  .right_content {
+    margin-top: 2rem;
   }
   
   .feature {
-    padding-top: 0;
+    height: auto;
+    min-height: 600px;
   }
   
   .feature__container {
@@ -103,35 +167,12 @@
   }
   
   .designer_title {
-    font-size: 2rem;
     text-align: center;
-  }
-  
-  .feature__container p {
-    font-size: 18px;
-    line-height: 1.6;
-    text-align: left;
-  }
-  
-  .content {
-    width: 100%;
   }
 }
 
 @media only screen and (max-width: 480px) {
   .section__feature {
     padding: 2rem 1rem;
-  }
-  
-  .section__feature h1 {
-    font-size: 2rem;
-  }
-  
-  .designer_title {
-    font-size: 1.8rem;
-  }
-  
-  .feature__container p {
-    font-size: 16px;
   }
 }
