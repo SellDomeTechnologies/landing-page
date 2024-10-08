@@ -35,7 +35,6 @@
   background-size: 100%;
   background-position: center;
   background-repeat: no-repeat;
-  /* Increase animation duration to 10 seconds */
   animation: backgroundAnimation 10s ease-in-out infinite;
 }
 
@@ -67,7 +66,6 @@
   transition: opacity 0.5s ease-in-out;
 }
 
-/* Active state for image and video */
 .background-item.active {
   opacity: 1;
 }
@@ -134,7 +132,6 @@
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-/* Adjust for mobile screen */
 @media only screen and (max-width: 37.5em) {
   .header {
     justify-content: center;
