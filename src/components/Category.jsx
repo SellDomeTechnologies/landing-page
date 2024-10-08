@@ -63,7 +63,6 @@ const Category = () => {
         const trackWidth = carousel.firstChild.offsetWidth;
         const singleSetWidth = trackWidth / 3;
 
-        // Ensure we have enough items to create a smooth scroll
         const minSets = Math.ceil(carouselWidth / singleSetWidth) + 1;
         const currentSets = items.length / data.length;
         
@@ -72,8 +71,7 @@ const Category = () => {
           return;
         }
 
-        // Calculate animation duration based on screen width
-        const baseSpeed = 50; // pixels per second
+        const baseSpeed = 30;
         const animationDuration = singleSetWidth / baseSpeed;
         
         carousel.style.setProperty('--scroll-width', `-${singleSetWidth}px`);
