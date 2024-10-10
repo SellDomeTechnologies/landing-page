@@ -67,8 +67,8 @@
 }
 
 .download__app_button {
-  width: 220px;
-  height: 119px;
+  width: 140px;
+  height: auto;
   padding: 0;
   border: none;
   background: none;
