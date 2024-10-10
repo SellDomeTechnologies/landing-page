@@ -195,6 +195,11 @@
       width: 60%;
   }
 
+  .nav__menu button {
+    width: 100%;
+    margin-top: 1rem;
+  }
+
   .hamburger {
       display: flex;
   }
