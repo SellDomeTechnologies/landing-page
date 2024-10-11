@@ -9,33 +9,73 @@ function Header({ onVideoPlayingChange }) {
   const [activeIndex, setActiveIndex] = useState(0);
   const [isVideoPlaying, setIsVideoPlaying] = useState(false);
   const videoRef = useRef(null);
+  const animationRef = useRef(null);
+  const lastAnimationTimeRef = useRef(0);
+  const animationDuration = 10000; // 10 seconds, matching CSS animation duration
 
   useEffect(() => {
+    let animationFrameId;
+    let startTime;
+
+    const animate = (currentTime) => {
+      if (!startTime) startTime = currentTime - lastAnimationTimeRef.current;
+      
+      const elapsedTime = (currentTime - startTime) % animationDuration;
+      const progress = elapsedTime / animationDuration;
+      
+      if (animationRef.current) {
+        updateBackgroundPosition(progress);
+      }
+      
+      lastAnimationTimeRef.current = elapsedTime;
+      animationFrameId = requestAnimationFrame(animate);
+    };
+
+    const updateBackgroundPosition = (progress) => {
+      const keyframes = [
+        { transform: 'scale(1) translate(0, 0)' }, // 0%
+        { transform: 'scale(1.4) translate(-10%, 20%)', offset: 0.1 }, // 10%
+        { transform: 'scale(1.4) translate(-10%, -15%)', offset: 0.2 }, // 20%
+        { transform: 'scale(1.4) translate(10%, 20%)', offset: 0.4 }, // 40%
+        { transform: 'scale(1.4) translate(-10%, 10%)', offset: 0.6 }, // 60%
+        { transform: 'scale(1.4) translate(-10%, 20%)', offset: 0.8 }, // 80%
+        { transform: 'scale(1.4) translate(10%, 20%)', offset: 0.9 }, // 90%
+        { transform: 'scale(1) translate(0, 0)' } // 100%
+      ];
+
+      const currentKeyframe = keyframes.reduce((prev, curr, index) => {
+        if (index === 0) return curr;
+        const prevOffset = keyframes[index - 1].offset || (index - 1) / (keyframes.length - 1);
+        const currentOffset = curr.offset || index / (keyframes.length - 1);
+        
+        if (progress >= prevOffset && progress <= currentOffset) {
+          return curr;
+        }
+        return prev;
+      });
+
+      animationRef.current.style.transform = currentKeyframe.transform;
+    };
+
+    animationFrameId = requestAnimationFrame(animate);
+
     const handleVideoEnd = () => {
       setActiveIndex(0);
       setIsVideoPlaying(false);
       onVideoPlayingChange(false);
     };
 
-    const handleImageTimer = () => {
+    const startVideoTimer = () => {
       if (activeIndex === 0) {
-        document.querySelector(`.${styles['background-image']}`).style.animation = 'none';
-        setTimeout(() => {
-          document.querySelector(`.${styles['background-image']}`).style.animation = '';
-        }, 0);
-
         setTimeout(() => {
           setActiveIndex(1);
           setIsVideoPlaying(true);
           onVideoPlayingChange(true);
           if (videoRef.current) {
             videoRef.current.play();
-            // Set a timeout to end the video after 3 seconds
-            setTimeout(() => {
-              handleVideoEnd();
-            }, 5000);
+            setTimeout(handleVideoEnd, 5000);
           }
-        }, 5000);
+        }, 7000);
       }
     };
 
@@ -43,9 +83,10 @@ function Header({ onVideoPlayingChange }) {
       videoRef.current.addEventListener('ended', handleVideoEnd);
     }
 
-    handleImageTimer();
+    startVideoTimer();
 
     return () => {
+      cancelAnimationFrame(animationFrameId);
       if (videoRef.current) {
         videoRef.current.removeEventListener('ended', handleVideoEnd);
       }
@@ -69,6 +110,7 @@ function Header({ onVideoPlayingChange }) {
     <header className={styles.header}>
       <div className={styles['background-container']}>
         <div 
+          ref={animationRef}
           className={`${styles['background-item']} ${styles['background-image']} ${activeIndex === 0 ? styles.active : ''}`}
         >
           <div className={styles['lottie-container-green']}>
