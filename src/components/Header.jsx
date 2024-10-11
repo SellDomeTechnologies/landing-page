@@ -11,7 +11,7 @@ function Header({ onVideoPlayingChange }) {
   const videoRef = useRef(null);
   const animationRef = useRef(null);
   const lastAnimationTimeRef = useRef(0);
-  const animationDuration = 10000;
+  const animationDuration = 10000; // 10 seconds, matching CSS animation duration
 
   useEffect(() => {
     let animationFrameId;
@@ -34,13 +34,13 @@ function Header({ onVideoPlayingChange }) {
     const updateBackgroundPosition = (progress) => {
       const keyframes = [
         { transform: 'scale(1) translate(0, 0)' }, // 0%
-        { transform: 'scale(1.4) translate(-10%, 20%)', offset: 0.1 },
-        { transform: 'scale(1.4) translate(-10%, -15%)', offset: 0.2 },
-        { transform: 'scale(1.4) translate(10%, 20%)', offset: 0.4 },
-        { transform: 'scale(1.4) translate(-10%, 10%)', offset: 0.6 },
-        { transform: 'scale(1.4) translate(-10%, 20%)', offset: 0.8 },
-        { transform: 'scale(1.4) translate(10%, 20%)', offset: 0.9 },
-        { transform: 'scale(1) translate(0, 0)' }
+        { transform: 'scale(1.4) translate(-10%, 20%)', offset: 0.1 }, // 10%
+        { transform: 'scale(1.4) translate(-10%, -15%)', offset: 0.2 }, // 20%
+        { transform: 'scale(1.4) translate(10%, 20%)', offset: 0.4 }, // 40%
+        { transform: 'scale(1.4) translate(-10%, 10%)', offset: 0.6 }, // 60%
+        { transform: 'scale(1.4) translate(-10%, 20%)', offset: 0.8 }, // 80%
+        { transform: 'scale(1.4) translate(10%, 20%)', offset: 0.9 }, // 90%
+        { transform: 'scale(1) translate(0, 0)' } // 100%
       ];
 
       const currentKeyframe = keyframes.reduce((prev, curr, index) => {
