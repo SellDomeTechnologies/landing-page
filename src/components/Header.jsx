@@ -30,8 +30,12 @@ function Header({ onVideoPlayingChange }) {
           onVideoPlayingChange(true);
           if (videoRef.current) {
             videoRef.current.play();
+            // Set a timeout to end the video after 3 seconds
+            setTimeout(() => {
+              handleVideoEnd();
+            }, 5000);
           }
-        }, 20000);
+        }, 5000);
       }
     };
 
