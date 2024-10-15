@@ -4,7 +4,7 @@ import styles from "./Footer.module.css";
 function Footer() {
   const handleEmailClick = (e) => {
     e.preventDefault();
-    const email = 'selldomeafrica@gmail.com';
+    const email = 'hello@selldome.africa';
     const subject = 'Subject';
     const gmailUrl = `https://mail.google.com/mail/?view=cm&fs=1&to=${email}&su=${encodeURIComponent(subject)}`;
     window.open(gmailUrl, '_blank');
