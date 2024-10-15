@@ -95,14 +95,14 @@
   font-size: 5rem;
   font-weight: 900;
   line-height: 1.2;
-  text-shadow: 0 0 3px rgba(0, 0, 0, 0.5);
+  text-shadow: 0 0 3px rgba(0, 0, 0, 0.3);
   z-index: 1;
 }
 
 .header p {
   font-size: 1.8rem;
   font-weight: 600;
-  text-shadow: 0 0 8px rgba(0, 0, 0, 0.5);
+  text-shadow: 0 0 2px rgba(0, 0, 0, 0.2);
   z-index: 1;
 }
 
