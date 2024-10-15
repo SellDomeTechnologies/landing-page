@@ -10,6 +10,11 @@
   flex-direction: column;
   gap: 3rem;
   overflow: hidden;
+  transition: color 0.5s ease-in-out;
+}
+
+.header.videoPlaying {
+  color: #ffffff;
 }
 
 .background-container {
@@ -62,11 +67,24 @@
   100% { transform: scale(1) translate(0, 0); }
 }
 
+.video-container {
+  position: relative;
+}
+
 .background-video {
+  width: 100%;
+  height: 100%;
   object-fit: cover;
   object-position: center 40%;
-  opacity: 0;
-  transition: opacity 0.5s ease-in-out;
+}
+
+.video-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.85));
 }
 
 .background-item.active {
@@ -77,15 +95,14 @@
   font-size: 5rem;
   font-weight: 900;
   line-height: 1.2;
-  text-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+  text-shadow: 0 0 3px rgba(0, 0, 0, 0.5);
   z-index: 1;
 }
 
 .header p {
   font-size: 1.8rem;
   font-weight: 600;
-  color: #621b3b;
-  text-shadow: 0 0 8px rgba(255, 255, 255, 0.5);
+  text-shadow: 0 0 8px rgba(0, 0, 0, 0.5);
   z-index: 1;
 }
 
@@ -102,6 +119,11 @@
   position: relative;
   overflow: hidden;
   z-index: 1;
+}
+
+.videoPlaying button {
+  color: #821b4a;
+  background-color: #fff;
 }
 
 .header button::before {
@@ -128,6 +150,10 @@
   background-color: #9e225a;
   transform: translateY(-2px);
   box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
+}
+
+.videoPlaying button:hover {
+  background-color: #f0f0f0;
 }
 
 .header button:active {
