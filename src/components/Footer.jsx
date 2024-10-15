@@ -66,7 +66,7 @@ function Footer() {
                 className={styles.email_link}
                 onClick={handleEmailClick}
               >
-                selldomeafrica@gmail.com
+                hello@selldome.africa
               </a>
             </li>
           </ul>
