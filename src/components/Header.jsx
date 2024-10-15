@@ -131,7 +131,7 @@ function Header({ onVideoPlayingChange }) {
                 loop
                 animationData={orangeLottie}
                 play
-                style={{ width: 50, height: 50 }}
+                style={{ width: 35, height: 35 }}
               />
             </div>
           ))}
