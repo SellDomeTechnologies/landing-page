@@ -11,7 +11,7 @@ function Header({ onVideoPlayingChange }) {
   const videoRef = useRef(null);
   const animationRef = useRef(null);
   const lastAnimationTimeRef = useRef(0);
-  const animationDuration = 10000; // 10 seconds, matching CSS animation duration
+  const animationDuration = 10000;
 
   useEffect(() => {
     let animationFrameId;
@@ -33,14 +33,14 @@ function Header({ onVideoPlayingChange }) {
 
     const updateBackgroundPosition = (progress) => {
       const keyframes = [
-        { transform: 'scale(1) translate(0, 0)' }, // 0%
-        { transform: 'scale(1.4) translate(-10%, 20%)', offset: 0.1 }, // 10%
-        { transform: 'scale(1.4) translate(-10%, -15%)', offset: 0.2 }, // 20%
-        { transform: 'scale(1.4) translate(10%, 20%)', offset: 0.4 }, // 40%
-        { transform: 'scale(1.4) translate(-10%, 10%)', offset: 0.6 }, // 60%
-        { transform: 'scale(1.4) translate(-10%, 20%)', offset: 0.8 }, // 80%
-        { transform: 'scale(1.4) translate(10%, 20%)', offset: 0.9 }, // 90%
-        { transform: 'scale(1) translate(0, 0)' } // 100%
+        { transform: 'scale(1) translate(0, 0)' },
+        { transform: 'scale(1.4) translate(-10%, 20%)', offset: 0.1 },
+        { transform: 'scale(1.4) translate(-10%, -15%)', offset: 0.2 },
+        { transform: 'scale(1.4) translate(10%, 20%)', offset: 0.4 },
+        { transform: 'scale(1.4) translate(-10%, 10%)', offset: 0.6 },
+        { transform: 'scale(1.4) translate(-10%, 20%)', offset: 0.8 },
+        { transform: 'scale(1.4) translate(10%, 20%)', offset: 0.9 },
+        { transform: 'scale(1) translate(0, 0)' }
       ];
 
       const currentKeyframe = keyframes.reduce((prev, curr, index) => {
@@ -107,7 +107,7 @@ function Header({ onVideoPlayingChange }) {
   ];
 
   return (
-    <header className={styles.header}>
+    <header className={`${styles.header} ${isVideoPlaying ? styles.videoPlaying : ''}`}>
       <div className={styles['background-container']}>
         <div 
           ref={animationRef}
@@ -136,14 +136,17 @@ function Header({ onVideoPlayingChange }) {
             </div>
           ))}
         </div>
-        <video
-          ref={videoRef}
-          className={`${styles['background-item']} ${styles['background-video']} ${activeIndex === 1 ? styles.active : ''}`}
-          muted
-          playsInline
-        >
-          <source src="/video1.mp4" type="video/mp4" />
-        </video>
+        <div className={`${styles['background-item']} ${styles['video-container']} ${activeIndex === 1 ? styles.active : ''}`}>
+          <video
+            ref={videoRef}
+            className={styles['background-video']}
+            muted
+            playsInline
+          >
+            <source src="/video1.mp4" type="video/mp4" />
+          </video>
+          <div className={styles['video-overlay']}></div>
+        </div>
       </div>
       <h1>
         Your Ultimate Fashion
