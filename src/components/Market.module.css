@@ -38,11 +38,61 @@
   gap: 1rem;
 }
 
+.market__coming_soon {
+  color: #621b3b;
+  font-style: italic;
+  font-size: 1.6rem !important;
+}
+
 .market__btn {
   display: flex;
   gap: 1.5rem;
 }
 
+/* Custom download button for market section */
+.market__custom_btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 1.2rem 2.4rem;
+  background: linear-gradient(135deg, #621b3b 0%, #8a2752 100%);
+  color: white;
+  border: none;
+  border-radius: 50px;
+  font-size: 1.6rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(98, 27, 59, 0.2);
+}
+
+.market__custom_btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(98, 27, 59, 0.3);
+  background: linear-gradient(135deg, #7a2449 0%, #9a3060 100%);
+}
+
+.market__custom_btn:active {
+  transform: translateY(0);
+}
+
+.market__download_icon {
+  width: 24px;
+  height: 24px;
+  color: currentColor;
+  animation: bounce 2s infinite;
+}
+
+@keyframes bounce {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(3px);
+  }
+}
+
+/* Original button styles - kept for reference */
 .market__app_btn {
   width: 150px;
   height: auto;
@@ -94,5 +144,15 @@
   .market__img {
     margin-top: 2rem;
     justify-content: center;
+  }
+
+  .market__custom_btn {
+    font-size: 1.4rem;
+    padding: 1rem 2rem;
+  }
+  
+  .market__download_icon {
+    width: 20px;
+    height: 20px;
   }
 }

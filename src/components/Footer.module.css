@@ -38,6 +38,46 @@
   gap: 2rem;
 }
 
+/* Custom download button for footer */
+.footer__custom_btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.8rem;
+  padding: 1rem 2rem;
+  background: linear-gradient(135deg, #621b3b 0%, #8a2752 100%);
+  color: white;
+  border: none;
+  border-radius: 50px;
+  font-size: 1.4rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 3px 12px rgba(98, 27, 59, 0.2);
+}
+
+.footer__custom_btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 5px 18px rgba(98, 27, 59, 0.3);
+  background: linear-gradient(135deg, #7a2449 0%, #9a3060 100%);
+}
+
+.footer__custom_btn:active {
+  transform: translateY(0);
+}
+
+.footer__download_icon {
+  width: 20px;
+  height: 20px;
+  color: currentColor;
+}
+
+.coming_soon_text {
+  color: #621b3b;
+  font-style: italic;
+  font-size: 1.4rem;
+}
+
+/* Original button styles - kept for reference */
 .footer__app_btn {
   width: 140px;
   height: auto;
@@ -171,5 +211,15 @@
     bottom: auto;
     width: 100%;
     top: auto;
+  }
+
+  .footer__custom_btn {
+    font-size: 1.2rem;
+    padding: 0.8rem 1.6rem;
+  }
+
+  .footer__download_icon {
+    width: 18px;
+    height: 18px;
   }
 }
