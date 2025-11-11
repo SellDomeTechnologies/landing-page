@@ -4,7 +4,7 @@ import styles from "./Market.module.css";
 function Market() {
   const handleDownloadClick = () => {
     // Replace with your actual GitHub releases URL
-    window.open('https://github.com/YOUR_USERNAME/selldome-app/releases/latest', '_blank');
+    window.open('https://github.com/Gld-Mx24483/selldome-technologies-mobile-app/releases/latest', '_blank');
   };
 
   return (

@@ -1,4 +1,3 @@
-//Home.jsx
 import { useEffect, useState } from 'react';
 import AboutUs from "../components/AboutUs";
 import Category from "../components/Category";
