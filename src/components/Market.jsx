@@ -1,4 +1,3 @@
-// Market.jsx
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import styles from "./Market.module.css";
@@ -61,6 +60,8 @@ function Market() {
     </section>
   );
 }
+
+export default Market;
 
 // //Market.jsx
 // import React from 'react';

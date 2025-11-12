@@ -1,4 +1,3 @@
-// Download.jsx
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import styles from "./Download.module.css";
