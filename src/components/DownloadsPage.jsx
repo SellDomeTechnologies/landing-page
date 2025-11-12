@@ -1,8 +1,25 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import styles from './DownloadsPage.module.css';
 
 function DownloadsPage() {
+  // Scroll to top when component mounts
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
+  // Google Drive direct download links
+  const downloadLinks = {
+    universal: 'https://drive.google.com/uc?export=download&id=1t-ag2mbWGd5KXGNzKDriWOU42fk5b2fK',
+    arm64: 'https://drive.google.com/uc?export=download&id=1fTtG8lpan14MMFV6c7W3-Iw9Mbm9Zo5J',
+    armv7: 'https://drive.google.com/uc?export=download&id=1euDMOxYFgHM1gv8Rv7_C2t1xYXCBKpaX'
+  };
+
+  const handleDownload = (url) => {
+    // Direct download - opens in new tab and triggers download
+    window.open(url, '_blank');
+  };
+
   return (
     <section className={styles.downloads__section}>
       <div className={styles.downloads__container}>
@@ -37,10 +54,13 @@ function DownloadsPage() {
             <p className={styles.apk__description}>
               Works on all Android devices. Perfect if you're unsure about your device architecture.
             </p>
-            <div className={styles.apk__size}>~50 MB</div>
-            <a href="/apks/app-release.apk" download className={styles.download__btn}>
+            {/* <div className={styles.apk__size}>~50 MB</div> */}
+            <button 
+              className={styles.download__btn}
+              onClick={() => handleDownload(downloadLinks.universal)}
+            >
               Download Now
-            </a>
+            </button>
           </div>
 
           <div className={styles.apk__card}>
@@ -55,10 +75,13 @@ function DownloadsPage() {
             <p className={styles.apk__description}>
               Optimized for modern 64-bit ARM devices. Smaller size and better performance.
             </p>
-            <div className={styles.apk__size}>~20 MB</div>
-            <a href="/apks/app-arm64-v8a-release.apk" download className={styles.download__btn}>
+            {/* <div className={styles.apk__size}>~20 MB</div> */}
+            <button 
+              className={styles.download__btn}
+              onClick={() => handleDownload(downloadLinks.arm64)}
+            >
               Download Now
-            </a>
+            </button>
           </div>
 
           <div className={styles.apk__card}>
@@ -72,10 +95,13 @@ function DownloadsPage() {
             <p className={styles.apk__description}>
               For older 32-bit ARM devices. Compatible with legacy Android phones.
             </p>
-            <div className={styles.apk__size}>~15 MB</div>
-            <a href="/apks/app-armeabi-v7a-release.apk" download className={styles.download__btn}>
+            {/* <div className={styles.apk__size}>~15 MB</div> */}
+            <button 
+              className={styles.download__btn}
+              onClick={() => handleDownload(downloadLinks.armv7)}
+            >
               Download Now
-            </a>
+            </button>
           </div>
         </div>
 

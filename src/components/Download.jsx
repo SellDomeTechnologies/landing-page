@@ -1,9 +1,13 @@
+// Download.jsx
+import React from 'react';
+import { useNavigate } from 'react-router-dom';
 import styles from "./Download.module.css";
 
 function Download() {
+  const navigate = useNavigate();
+
   const handleDownloadClick = () => {
-    // Replace with your actual GitHub releases URL
-    window.open('https://github.com/Gld-Mx24483/selldome-technologies-mobile-app/releases/latest', '_blank');
+    navigate('/downloads');
   };
 
   return (
@@ -20,7 +24,6 @@ function Download() {
           accessories for your next masterpiece have never been easier.</b>
         </p>
         <p>Download the SellDome App Now and Start Creating!</p>
-        {/* <p>Available on the App Store and Google Play Store.</p> */}
         <p className={styles.download__coming_soon}>App Store and Google Play coming soon!</p>
         
         <div className={styles.download__button}>
@@ -51,14 +54,6 @@ function Download() {
             </svg>
             <span>Download APK for Android</span>
           </button>
-          
-          {/* Original buttons - commented out */}
-          {/* <button className={styles.download__app_button}>
-            <img src="app-store.png" alt="download btn" />
-          </button>
-          <button className={styles.download__app_button}>
-            <img src="google-play.png" alt="download btn" />
-          </button> */}
         </div>
       </div>
     </section>

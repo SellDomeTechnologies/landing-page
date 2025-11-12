@@ -1,10 +1,13 @@
+// Market.jsx
 import React from 'react';
+import { useNavigate } from 'react-router-dom';
 import styles from "./Market.module.css";
 
 function Market() {
+  const navigate = useNavigate();
+
   const handleDownloadClick = () => {
-    // Replace with your actual GitHub releases URL
-    window.open('https://github.com/Gld-Mx24483/selldome-technologies-mobile-app/releases/latest', '_blank');
+    navigate('/downloads');
   };
 
   return (
@@ -19,7 +22,6 @@ function Market() {
           </p>
           <div className={styles.market__download}>
             <p>Download the SellDome App Now and Start Creating!</p>
-            {/* <p>Available on the App Store and Google Play Store</p> */}
             <p className={styles.market__coming_soon}>App Store and Google Play coming soon!</p>
           </div>
           <div className={styles.market__btn}>
@@ -50,14 +52,6 @@ function Market() {
               </svg>
               <span>Download APK for Android</span>
             </button>
-            
-            {/* Original buttons - commented out */}
-            {/* <button className={styles.market__app_btn}>
-              <img src="app-store.png" alt="Download on App Store" />
-            </button>
-            <button className={styles.market__app_btn}>
-              <img src="google-play.png" alt="Get it on Google Play" />
-            </button> */}
           </div>
         </div>
         <div className={styles.market__img}>
@@ -67,8 +61,6 @@ function Market() {
     </section>
   );
 }
-
-export default Market;
 
 // //Market.jsx
 // import React from 'react';
