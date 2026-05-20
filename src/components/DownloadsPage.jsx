@@ -133,7 +133,7 @@ function DownloadsPage() {
         </div>
 
         <div className={styles.support__section}>
-          <p>Need help? Contact our support team at <a href="mailto:hello@selldome.africa">hello@selldome.africa</a></p>
+          <p>Need help? Contact our support team at <a href="mailto:support@selldome.africa">support@selldome.africa</a></p>
         </div>
 
         <Link to="/" className={styles.back__btn}>

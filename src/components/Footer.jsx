@@ -1,13 +1,14 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import styles from "./Footer.module.css";
+import { Link } from 'react-router-dom';
 
 function Footer() {
   const navigate = useNavigate();
 
   const handleEmailClick = (e) => {
     e.preventDefault();
-    const email = 'hello@selldome.africa';
+    const email = 'support@selldome.africa';
     const subject = 'Subject';
     const gmailUrl = `https://mail.google.com/mail/?view=cm&fs=1&to=${email}&su=${encodeURIComponent(subject)}`;
     window.open(gmailUrl, '_blank');
@@ -89,8 +90,16 @@ function Footer() {
         <div>
           <h4>Legal</h4>
           <ul>
-            <li>Privacy Policy</li>
-            <li>Terms and Conditions</li>
+            <li>
+              <Link to="/privacy" className={styles.footer__legal_link}>
+                Privacy Policy
+              </Link>
+            </li>
+            <li>
+              <Link to="/terms" className={styles.footer__legal_link}>
+                Terms and Conditions
+              </Link>
+            </li>
           </ul>
         </div>
 
@@ -103,7 +112,7 @@ function Footer() {
                 className={styles.email_link}
                 onClick={handleEmailClick}
               >
-                hello@selldome.africa
+                support@selldome.africa
               </a>
             </li>
           </ul>
@@ -135,7 +144,7 @@ export default Footer;
 // function Footer() {
 //   const handleEmailClick = (e) => {
 //     e.preventDefault();
-//     const email = 'hello@selldome.africa';
+//     const email = 'support@selldome.africa';
 //     const subject = 'Subject';
 //     const gmailUrl = `https://mail.google.com/mail/?view=cm&fs=1&to=${email}&su=${encodeURIComponent(subject)}`;
 //     window.open(gmailUrl, '_blank');
@@ -232,7 +241,7 @@ export default Footer;
 //                 className={styles.email_link}
 //                 onClick={handleEmailClick}
 //               >
-//                 hello@selldome.africa
+//                 support@selldome.africa
 //               </a>
 //             </li>
 //           </ul>
@@ -264,7 +273,7 @@ export default Footer;
 // function Footer() {
 //   const handleEmailClick = (e) => {
 //     e.preventDefault();
-//     const email = 'hello@selldome.africa';
+//     const email = 'support@selldome.africa';
 //     const subject = 'Subject';
 //     const gmailUrl = `https://mail.google.com/mail/?view=cm&fs=1&to=${email}&su=${encodeURIComponent(subject)}`;
 //     window.open(gmailUrl, '_blank');
@@ -326,7 +335,7 @@ export default Footer;
 //                 className={styles.email_link}
 //                 onClick={handleEmailClick}
 //               >
-//                 hello@selldome.africa
+//                 support@selldome.africa
 //               </a>
 //             </li>
 //           </ul>
